@@ -1,6 +1,6 @@
 RSpec.describe Soundart::Cli do
   it "has a version number" do
-    expect(Soundart::Cli::VERSION).not_to be nil
+    expect(Soundart::VERSION).not_to be nil
   end
 
   it "does something useful" do

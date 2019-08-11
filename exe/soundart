@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'soundart/cli'
+Soundart::Cli.start(ARGV)
