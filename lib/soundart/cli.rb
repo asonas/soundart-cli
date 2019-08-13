@@ -9,7 +9,8 @@ module Soundart
     end
 
     def initialize(argv)
-      @url = argv.dup
+      @argv = argv.dup
+      @url = argv.shift
       @response = nil
     end
 
