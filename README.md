@@ -11,6 +11,14 @@ see also: https://github.com/robinst/taglib-ruby#installation
 Add this line to your application's Gemfile:
 
 ```
+$ git clone git@github.com:asonas/soundart-cli
+$ cd soundart-cli
+$ rake install soundart-cli
+```
+
+or
+
+```
 $ gem install soundart-cli
 ```
 
