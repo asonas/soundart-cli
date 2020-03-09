@@ -3,7 +3,7 @@
 Install dependencies
 
 ```
-brew install taglib
+brew install taglib youtube-dl
 ```
 
 see also: https://github.com/robinst/taglib-ruby#installation
