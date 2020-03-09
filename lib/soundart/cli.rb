@@ -1,6 +1,7 @@
 require "soundart/version"
 require "soundcloud"
 require "taglib"
+require 'open-uri'
 
 module Soundart
   class Cli
@@ -55,7 +56,7 @@ module Soundart
           pic.picture = File.open(cover_art, 'rb') { |f| f.read }
         else
           # ユーザのアバターをセットさせる
-          open(sound_track["user"]["avatar_url"].gsub("large", 't500x500')) do |f|
+          open(sound_track["user"]["avatar_url"].gsub(/(large|original)/, 't500x500')) do |f|
             pic.picture = f.read
           end
         end
